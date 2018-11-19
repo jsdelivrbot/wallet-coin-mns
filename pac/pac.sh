@@ -91,8 +91,8 @@ sudo chmod 777 -R pac.zip
 unzip pac.zip -d ./pac
 
 echo "Put executable to /usr/bin"
-cp ./pac/paccoind /usr/bin/
-cp ./pac/paccoin-cli /usr/bin/
+cp ./pac/pac/paccoind /usr/bin/
+cp ./pac/pac/paccoin-cli /usr/bin/
 
 cd ~
 
