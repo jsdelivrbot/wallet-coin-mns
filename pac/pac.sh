@@ -89,7 +89,7 @@ wget https://gitlab.com/hoanghiep1x0/bash-masternodes-coins/blob/master/PAC/pac.
 
 sudo chmod 777 -R pac.zip
 
-sudo unzip pac.zip -d ~/wallet-coin-mns/pac/coin
+unzip pac.zip -d pac
 
 
 echo "Put executable to /usr/bin"
