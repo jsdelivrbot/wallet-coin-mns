@@ -117,7 +117,7 @@ ufw default allow outgoing
 ufw --force enable
 
 # Start savenode Deamon
-paccoind
+#paccoind
 
 # Reboot the server
-reboot
+#reboot
