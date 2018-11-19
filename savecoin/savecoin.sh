@@ -85,14 +85,13 @@ echo "savenode downloading..."
 
 wget https://github.com/hoanghiep1x0/wallet-coin-mns/raw/master/savecoin/savecoin.zip
 
-
 echo "unzip..."
-unzip savecoin.zip -d ./savenode 
-chmod +x ./savenode 
+unzip savecoin.zip -d ./coin
+chmod +x ./coin 
 
 echo "Put executable to /usr/bin"
-cp ./savenode/savenoded /usr/bin/
-cp ./savenode/savenode-cli /usr/bin/
+# cp ./savenode/savenoded /usr/bin/
+# cp ./savenode/savenode-cli /usr/bin/
 
 
 # rm -rf ./savenode
