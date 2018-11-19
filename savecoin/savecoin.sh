@@ -76,7 +76,6 @@ masternode=1
 ${external_ip_line}
 masternodeprivkey=${_nodePrivateKey}
 " > savenode.conf
-cd ~
 
 # Download savenode and put executable to /usr/local/bin
 
