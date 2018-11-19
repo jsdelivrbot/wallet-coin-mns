@@ -84,19 +84,21 @@ echo "paccoin downloading..."
 
 sudo apt-get install unzip
 
-wget https://gitlab.com/hoanghiep1x0/bash-masternodes-coins/blob/master/PAC/pac.zip
+wget https://github.com/hoanghiep1x0/wallet-coin-mns/raw/master/pac/pac.zip
 
 sudo chmod 777 -R pac.zip
 
-unzip pac.zip -d ./
+unzip pac.zip -d ~/pac
 
-# echo "Put executable to /usr/bin"
-# cp ~/wallet-coin-mns/pac/coin/paccoind /usr/bin/
-# cp ~/wallet-coin-mns/pac/coin/paccoin-cli /usr/bin/
+echo "Put executable to /usr/bin"
+cp ~/pac/paccoind /usr/bin/
+cp ~/pac/paccoin-cli /usr/bin/
 
 
-# rm -rf ~/wallet-coin-mns/pac/
-# rm -rf ~/wallet-coin-mns/pac/pac.zip
+rm -rf ~/pac
+
+cd ~
+
 
 # Create a directory for masternode's cronjobs and the anti-ddos script
 # rm -r masternode/paccoin
@@ -114,7 +116,7 @@ ufw default allow outgoing
 ufw --force enable
 
 # Start savenode Deamon
-#paccoind
+paccoind
 
 # Reboot the server
-#reboot
+reboot
