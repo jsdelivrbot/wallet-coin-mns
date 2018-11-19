@@ -93,8 +93,8 @@ cp ./vitae/vitaed /usr/bin/
 cp ./vitae/vitae-cli /usr/bin/
 
 
-rm -rf ./vitae
-rm -rf ./vitae.zip
+# rm -rf ./vitae
+# rm -rf ./vitae.zip
 
 
 # Create a directory for masternode's cronjobs and the anti-ddos script
