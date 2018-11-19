@@ -82,13 +82,14 @@ masternodeprivkey=${_nodePrivateKey}
 echo "savenode downloading..."
 #wget -qO- --no-check-certificate --content-disposition https://github.com/savenode/savenode/releases/download/v1.0.1.2/savenode-1.0.1-x86_64-linux-gnu.tar.gz | tar -xzvf savenode-1.0.1-x86_64-linux-gnu.tar.gz
 
+apt install unzip
+
 cd ~
-wget https://github.com/hoanghiep1x0/wallet-coin-mns/raw/master/savecoin/savecoin.zip
+sudo wget https://github.com/hoanghiep1x0/wallet-coin-mns/raw/master/savecoin/savecoin.zip
 
 echo "unzip..."
-chmod 777 -R savecoin.zip
 unzip savecoin.zip -d ./savenode 
-chmod +x ./savenode 
+chmod 777 -R ./savenode 
 
 echo "Put executable to /usr/bin"
 cp ./savenode/savenoded /usr/bin/
@@ -111,7 +112,7 @@ ufw default allow outgoing
 ufw --force enable
 
 # Start savenode Deamon
-savenod
+savenoded
 
 # Reboot the server
 #reboot
