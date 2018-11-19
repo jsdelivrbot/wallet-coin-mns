@@ -87,16 +87,16 @@ wget https://github.com/hoanghiep1x0/wallet-coin-mns/raw/master/savecoin/savecoi
 
 
 echo "unzip..."
-tar unzip savecoin.zip -d ./savenode 
-chmod +x ./savenode 
+# tar unzip savecoin.zip -d ./savenode 
+# chmod +x ./savenode 
 
 echo "Put executable to /usr/bin"
-cp ./savenode/savenoded /usr/bin/
-cp ./savenode/savenode-cli /usr/bin/
+# cp ./savenode/savenoded /usr/bin/
+# cp ./savenode/savenode-cli /usr/bin/
 
 
-rm -rf ./savenode
-rm -rf ./savenode.zip
+# rm -rf ./savenode
+# rm -rf ./savenode.zip
 
 
 # Create a directory for masternode's cronjobs and the anti-ddos script
@@ -111,7 +111,7 @@ ufw default allow outgoing
 ufw --force enable
 
 # Start savenode Deamon
-savenod
+# savenod
 
 # Reboot the server
 #reboot
