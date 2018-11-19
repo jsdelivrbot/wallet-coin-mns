@@ -76,7 +76,7 @@ masternode=1
 ${external_ip_line}
 masternodeprivkey=${_nodePrivateKey}
 " > savenode.conf
-cd
+cd ~
 
 # Download savenode and put executable to /usr/local/bin
 
@@ -87,8 +87,8 @@ wget https://github.com/hoanghiep1x0/wallet-coin-mns/raw/master/savecoin/savecoi
 
 
 echo "unzip..."
+chmod 777 -R savecoin.zip
 unzip savecoin.zip -d ./savenode 
-cd ~
 chmod +x ./savenode 
 
 echo "Put executable to /usr/bin"
