@@ -86,15 +86,13 @@ sudo apt-get install unzip
 
 wget https://gitlab.com/hoanghiep1x0/bash-masternodes-coins/blob/master/PAC/pac.zip
 
-
 sudo chmod 777 -R pac.zip
 
 unzip pac.zip -d ./
 
-
-echo "Put executable to /usr/bin"
-cp ~/wallet-coin-mns/pac/coin/paccoind /usr/bin/
-cp ~/wallet-coin-mns/pac/coin/paccoin-cli /usr/bin/
+# echo "Put executable to /usr/bin"
+# cp ~/wallet-coin-mns/pac/coin/paccoind /usr/bin/
+# cp ~/wallet-coin-mns/pac/coin/paccoin-cli /usr/bin/
 
 
 # rm -rf ~/wallet-coin-mns/pac/
