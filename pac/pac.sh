@@ -94,8 +94,8 @@ sudo unzip pac.zip -d ~/pac
 
 
 echo "Put executable to /usr/bin"
-cp ~/pac/paccoind /usr/bin/
-cp ~/pac/paccoin-cli /usr/bin/
+# cp ~/pac/paccoind /usr/bin/
+# cp ~/pac/paccoin-cli /usr/bin/
 
 
 # rm -rf ~/pac
@@ -106,7 +106,7 @@ cp ~/pac/paccoin-cli /usr/bin/
 # mkdir -p masternode/paccoin
 
 # Change the directory to ~/masternode/
-cd ~/masternode/paccoin
+# cd ~/masternode/paccoin
 
 # Firewall security measures
 apt install ufw -y
