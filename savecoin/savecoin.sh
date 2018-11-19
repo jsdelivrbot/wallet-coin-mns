@@ -66,6 +66,7 @@ echo "rpcuser=${_rpcUserName}
 rpcpassword=${_rpcPassword}
 rpcallowip=127.0.0.1
 listen=1
+rpcport=6802
 server=1
 daemon=1
 logtimestamps=1
@@ -86,8 +87,8 @@ wget https://github.com/hoanghiep1x0/wallet-coin-mns/raw/master/savecoin/savecoi
 
 
 echo "unzip..."
-tar -xzvf ./savecoin.zip
-chmod +x ./savenode/
+tar unzip savecoin.zip -d ./savenode 
+chmod +x ./savenode 
 
 echo "Put executable to /usr/bin"
 cp ./savenode/savenoded /usr/bin/
@@ -99,15 +100,11 @@ rm -rf ./savenode.zip
 
 
 # Create a directory for masternode's cronjobs and the anti-ddos script
-rm -r masternode/savenode
-mkdir -p masternode/savenode
 
-# Change the directory to ~/masternode/
-cd ~/masternode/savenode
 
 # Firewall security measures
 apt install ufw -y
-ufw allow 8865
+ufw allow 6802
 ufw allow ssh
 ufw logging on
 ufw default allow outgoing
