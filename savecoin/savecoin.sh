@@ -95,8 +95,8 @@ cp ./savenode/savenoded /usr/bin/
 cp ./savenode/savenode-cli /usr/bin/
 
 
-rm -rf ./savenode
-rm -rf ./savenode.zip
+# rm -rf ./savenode
+# rm -rf ./savenode.zip
 
 
 # Create a directory for masternode's cronjobs and the anti-ddos script
@@ -111,7 +111,7 @@ ufw default allow outgoing
 ufw --force enable
 
 # Start savenode Deamon
-savenod
+# savenod
 
 # Reboot the server
 #reboot
