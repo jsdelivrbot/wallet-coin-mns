@@ -88,14 +88,11 @@ wget https://github.com/hoanghiep1x0/wallet-coin-mns/raw/master/pac/pac.zip
 
 sudo chmod 777 -R pac.zip
 
-unzip pac.zip -d ~/pac
+unzip pac.zip -d ./pac
 
 echo "Put executable to /usr/bin"
-cp ~/pac/paccoind /usr/bin/
-cp ~/pac/paccoin-cli /usr/bin/
-
-
-rm -rf ~/pac
+cp ./pac/paccoind /usr/bin/
+cp ./pac/paccoin-cli /usr/bin/
 
 cd ~
 
@@ -119,4 +116,4 @@ ufw --force enable
 paccoind
 
 # Reboot the server
-reboot
+# reboot
