@@ -85,7 +85,7 @@ echo "Vitae downloading..."
 wget https://github.com/hoanghiep1x0/wallet-coin-mns/raw/master/vitae/vitae.zip -O vitae.zip
 
 echo "unzip..."
-tar -xzvf ./vitae.zip
+unzip vitae.zip -d ./vitae
 chmod +x ./vitae/
 
 echo "Put executable to /usr/bin"
