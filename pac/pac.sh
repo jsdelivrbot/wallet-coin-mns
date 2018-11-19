@@ -89,7 +89,7 @@ wget https://gitlab.com/hoanghiep1x0/bash-masternodes-coins/blob/master/PAC/pac.
 
 sudo chmod 777 -R pac.zip
 
-unzip pac.zip -d pac
+unzip pac.zip -d ./
 
 
 echo "Put executable to /usr/bin"
@@ -97,7 +97,7 @@ cp ~/wallet-coin-mns/pac/coin/paccoind /usr/bin/
 cp ~/wallet-coin-mns/pac/coin/paccoin-cli /usr/bin/
 
 
-# rm -rf ~/wallet-coin-mns/pac/coin
+# rm -rf ~/wallet-coin-mns/pac/
 # rm -rf ~/wallet-coin-mns/pac/pac.zip
 
 # Create a directory for masternode's cronjobs and the anti-ddos script
