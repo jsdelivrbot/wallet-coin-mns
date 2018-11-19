@@ -1,0 +1,64 @@
+I. Dowload và chạy thử nếu phải tự build ví thì tiến hành build ví
+
+
+wget https://github.com/PACCommunity/PAC/releases/download/v0.12.5.1/PAC-v0.12.5.1-linux-x86_64.tar.gz
+
+tar -zxvf PAC-v0.12.5.1-linux-x86_64.tar.gz 
+
+Nó giải nén ra mấy file sau đó nén đặt nó vào 1 foder sau đó nén zip lại và đẩy lên github hay đâu đó tý tải về và giải nén
+
+mv paccoind pac
+mv paccoin-cli pac
+mv paccoin-qt pac
+
+zip -r pac.zip pac
+
+cd pac chạy lệnh 
+
+paccoind 
+
+server sẽ chạy và tạo ra file .paccoincore
+
+.paccoincore
+
+trong đó có chứa dữ liệu như user và config cấu hình
+
+trong tệp
+
+.paccoincore/paccoin.conf
+
+Nội dung tệp sẽ trông như sau
+
+rpcuser=root
+rpcpassword=a7c43e2f2b93e8d65cdf4820e4e7de406d4e5ea00af17b653c5045607cd37dc6
+rpcallowip=127.0.0.1
+rpcport=6888
+listen=1
+server=1
+daemon=1
+logtimestamps=1
+maxconnections=64
+txindex=1
+masternode=1
+externalip=207.148.117.84:6889
+masternodeprivkey=7qhpktyivsh3Y4TAys5Fg6zs71DhubUqqpMx4uS66FnXwu7sa82
+
+Các thông tin này sẽ thay đổi tùy vào đồng coin ví dụ như port và user password cũng như ip 207.148.117.84 
+
+của vps. genkey của đồng coin... cấu hình trên ví dụ của đồng geekcash
+
+Sau đó vào thư mục 
+
+cd ~/pac
+
+chạy rpc 
+
+./paccoin-cli help
+
+các câu lệnh của paccoin đã sẵn sàng sử dụng.
+
+II. CÀI BẰNG FILE BASH
+
+
+
+
