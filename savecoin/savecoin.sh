@@ -85,13 +85,15 @@ echo "savenode downloading..."
 
 wget https://github.com/hoanghiep1x0/wallet-coin-mns/raw/master/savecoin/savecoin.zip
 
+
 echo "unzip..."
-unzip savecoin.zip -d ./coin
-chmod +x ./coin 
+unzip savecoin.zip -d ./savenode 
+cd ~
+chmod +x ./savenode 
 
 echo "Put executable to /usr/bin"
-# cp ./savenode/savenoded /usr/bin/
-# cp ./savenode/savenode-cli /usr/bin/
+cp ./savenode/savenoded /usr/bin/
+cp ./savenode/savenode-cli /usr/bin/
 
 
 # rm -rf ./savenode
@@ -110,7 +112,7 @@ ufw default allow outgoing
 ufw --force enable
 
 # Start savenode Deamon
-# savenod
+savenod
 
 # Reboot the server
 #reboot
