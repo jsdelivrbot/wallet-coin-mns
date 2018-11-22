@@ -92,9 +92,8 @@ unzip savecoin.zip -d ./savenode
 chmod 777 -R ./savenode 
 
 echo "Put executable to /usr/bin"
-sudo cp ./savenode/savenoded /usr/bin/
-sudo cp ./savenode/savenode-cli /usr/bin/
-
+cp ./savenode/savenoded /usr/bin/
+cp ./savenode/savenode-cli /usr/bin/
 
 # rm -rf ./savenode
 # rm -rf ./savenode.zip
@@ -115,4 +114,4 @@ ufw --force enable
 savenoded
 
 # Reboot the server
-#reboot
+reboot

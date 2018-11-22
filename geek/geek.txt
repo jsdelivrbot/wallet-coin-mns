@@ -1,0 +1,15 @@
+rpcuser=rQgd0tqGGHU6
+rpcpassword=WBfivcAiUwxcrrRkM343DydPOd8o0mzS
+rpcallowip=127.0.0.1
+rpcport=1991
+bind=45.77.241.172:6889
+listen=1
+server=1
+daemon=1
+logtimestamps=1
+maxconnections=64
+txindex=1
+masternode=1
+externalip=45.77.241.172:6889
+masternodeprivkey=7sKuGPNG93mVuiXvmSNc43NxfkbsSonKAoHhzZegBkfEbRTbzwu
+
