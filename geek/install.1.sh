@@ -97,7 +97,7 @@ do
     sudo ls
 
     
-    wget https://rawgit.com/GeekCash/masternode/master/install.sh
+    wget https://cdn.jsdelivr.net/gh/GeekCash/masternode/install.sh
     chmod +x ./install.sh
     sudo bash ./install.sh
 
